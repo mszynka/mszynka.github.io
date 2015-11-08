@@ -1,0 +1,25 @@
+<section id="{{ page.title }}" class="container text-center">
+	{% if page.timeline %}
+		<div class="timeline">
+			<h2>{{ page.timeline | map: "title" }}</h2>
+			{% assign items = page.timeline | map: "items" | first %}
+			{% for item in items %}
+				<div class="timeline-item">
+					{% assign itemTitle = item | map: "title" %}
+					{% if itemTitle[0].size %}
+						<h5 class="title">{{ itemTitle[0] }}</h5>
+					{% endif %}
+					{% assign itemSubtitle = item | map: "subtitle" %}
+					{% if itemSubtitle[0].size %}
+						<div class="subtitle">{{ itemSubtitle[0] }}</div>
+					{% endif %}
+					{% assign itemImageSrc = item | map: "imageSrc" %}
+					{% assign itemImageAlt = item | map: "imageAlt" %}
+					{% if itemImageSrc[0].size or itemImageAlt[0].size %}
+						<img src="{{ itemImageSrc }}" alt="{{ itemImageAlt }}">
+					{% endif %}
+				</div>
+			{% endfor %}
+		</div>
+	{% endif %}
+</section>
