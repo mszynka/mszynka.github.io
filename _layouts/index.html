@@ -3,20 +3,12 @@
   {% include head.html %}
   <body>
     {% include header.html %}
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-    <!-- Experimental -->
-    {% for page in site.pages %}
-      {% if page.section-type %}
+    {% assign pages = site.pages | sort: "order" %}
+    {% for page in pages %}
+      {% if page.section-type and page.title %}
         {% include {{ page.section-type }}.html %}
-        <!-- {% elsif page.section-type == "latest-post" %}
-        {% include latest-post.html %} -->
       {% endif %}
     {% endfor %}
-    <!-- End experimental -->
     {% include footer.html %}
   </body>
 </html>

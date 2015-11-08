@@ -7,12 +7,13 @@
 #################
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://mszynka.pl"
+permalink: /blog/:year/:month/:title/
 
 #################
 # HEAD
 #################
-title: Mateusz Szynka - web developer and designer
-short-title: Mateusz Szynka
+title: Mateusz Szynka
+subtitle: web developer and designer
 author: "Mateusz Szynka"
 lang: "en"
 favicon: "/img/favicon.ico"
