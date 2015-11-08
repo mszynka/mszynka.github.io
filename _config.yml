@@ -1,0 +1,34 @@
+#############################
+# Mateusz Szynka home theme #
+#############################
+
+#################
+# Site settings
+#################
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://mszynka.pl"
+
+#################
+# HEAD
+#################
+title: Mateusz Szynka - web developer and designer
+short-title: Mateusz Szynka
+author: "Mateusz Szynka"
+lang: "en"
+favicon: "/img/favicon.ico"
+description: >
+  I'm a beginner web developer and designer. Currently studying Computer Science at Poznan University of Technology and working as Front End Developer at Caliper.pl. Thousand ideas but not enough time for all of them.
+
+#################
+# Contact settings
+#################
+email: devmsw12@gmail.com
+twitter_username: mszynka_
+github_username:  mszynka
+
+#################
+# Build settings
+#################
+markdown: kramdown
+sass:
+  style: compressed
