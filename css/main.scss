@@ -4,8 +4,7 @@
 @charset "utf-8";
 
 
-
-// Our variables
+// Variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   14px;
 $base-font-weight: 400;
@@ -28,8 +27,6 @@ $content-width:    1100px;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-
-
 // Use media queries like this:
 // @include media-query($on-palm) {
 //     .wrapper {
@@ -43,9 +40,6 @@ $on-laptop:        800px;
     }
 }
 
-
-
-// Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "helpers",
         "base",

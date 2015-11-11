@@ -4,14 +4,14 @@ section-type: timeline
 title: Career
 order: 30
 timeline:
-  -  title: Timeline
+  -  title: Career
      items:
      -  title: Element 1
-        subtitle: Sub title for element 1
+        description: Sub title for element 1
         imageSrc: /img/career1.jpg
         imageAlt: Career 1 element
      -  title: Element 2
-        subtitle: Sub title for element 2
+        description: Sub title for element 2
         imageSrc: /img/career2.jpg
         imageAlt: Career 2 element
 ---

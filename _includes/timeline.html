@@ -1,25 +1,35 @@
 <section id="{{ page.title }}" class="container text-center">
 	{% if page.timeline %}
-		<div class="timeline">
-			<h2>{{ page.timeline | map: "title" }}</h2>
-			{% assign items = page.timeline | map: "items" | first %}
-			{% for item in items %}
-				<div class="timeline-item">
-					{% assign itemTitle = item | map: "title" %}
-					{% if itemTitle[0].size %}
-						<h5 class="title">{{ itemTitle[0] }}</h5>
-					{% endif %}
-					{% assign itemSubtitle = item | map: "subtitle" %}
-					{% if itemSubtitle[0].size %}
-						<div class="subtitle">{{ itemSubtitle[0] }}</div>
-					{% endif %}
+        {% assign inverted = 0 %}
+		<h2>{{ page.timeline | map: "title" }}</h2>
+		<ul class="timeline">
+            {% assign items = page.timeline | map: "items" | first %}
+            {% for item in items %}
+            {% assign loopindex = forloop.index | modulo: 2 %}
+            <li{% if loopindex  == 0 %} class="timeline-inverted"{% endif %}>	
+                <div class="timeline-image">
 					{% assign itemImageSrc = item | map: "imageSrc" %}
 					{% assign itemImageAlt = item | map: "imageAlt" %}
 					{% if itemImageSrc[0].size or itemImageAlt[0].size %}
-						<img src="{{ itemImageSrc }}" alt="{{ itemImageAlt }}">
+						<img src="{{ itemImageSrc }}" alt="{{ itemImageAlt }}" class="img-circle img-responsive">
 					{% endif %}
+                </div>
+                <div class="timeline-panel">
+			        <div class="timeline-heading">	
+                        {% assign itemTitle = item | map: "title" %}
+		    			{% if itemTitle[0].size %}
+	    					<h4>{{ itemTitle[0] }}</h4>
+    					{% endif %}
+                    </div>
+                    <div class="timeline-body">
+			    		{% assign itemSubtitle = item | map: "description" %}
+		    			{% if itemSubtitle[0].size %}
+	    					<p class="subheading">{{ itemSubtitle[0] }}</p>
+    					{% endif %}
+                    </div>
 				</div>
+            </li>
 			{% endfor %}
-		</div>
+		</ul>
 	{% endif %}
 </section>
