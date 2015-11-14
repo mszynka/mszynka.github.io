@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: redirect
 section-type: section
 title: Contact
 order: 120
