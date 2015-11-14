@@ -3,12 +3,14 @@
   {% include head.html %}
   <body>
     {% include header.html %}
-    {% assign pages = site.pages | sort: "order" %}
-    {% for page in pages %}
-      {% if page.section-type and page.title %}
-        {% include {{ page.section-type }}.html %}
-      {% endif %}
-    {% endfor %}
+    <div class="container">
+      {% assign pages = site.pages | sort: "order" %}
+      {% for page in pages %}
+        {% if page.section-type and page.title %}
+          {% include {{ page.section-type }}.html %}
+        {% endif %}
+      {% endfor %}
+    </div>
     {% include footer.html %}
     {% include script.html %}
   </body>

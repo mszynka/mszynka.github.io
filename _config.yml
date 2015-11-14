@@ -34,3 +34,11 @@ markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
+
+exclude: [
+	"bootstrap/fonts/",
+	"boostrap/js",
+	"boostrap/less",
+	"boostrap/node_modules",
+	"boostrap/grunt"
+]

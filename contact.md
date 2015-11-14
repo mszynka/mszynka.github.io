@@ -11,12 +11,12 @@ order: 120
 <ul class="social-media-list">
 	{% if site.github_username %}
 		<li>
-			{% include icon-github.html username=site.github_username %}
+			{% include icon-social.html type="github" hasSecureLink="true" link="github.com" subdomain=site.github_username %}
 		</li>
 	{% endif %}
 	{% if site.twitter_username %}
 		<li>
-			{% include icon-twitter.html username=site.twitter_username %}
+			{% include icon-social.html type="twitter" hasSecureLink="true" link="twitter.com" subdomain=site.twitter_username %}
 		</li>
 	{% endif %}
 	{% if site.email %}

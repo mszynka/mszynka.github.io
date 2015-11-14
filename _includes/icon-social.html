@@ -1,0 +1,9 @@
+<a href="http{% if include.hasSecureLink %}s{% endif %}://{{ include.link }}/{{ include.subdomain }}">
+	<i class="fa fa-{{ include.type }}"></i>
+	<span>{{ include.subdomain }}</span>
+</a>
+{% if include.sublink %} / 
+<a href="http{% if include.hasSecureLink %}s{% endif %}://{{ include.link }}/{{ include.subdomain }}/{{ include.sublink }}">
+	<span>{{ include.sublink }}</span>
+</a>
+{% endif %}
