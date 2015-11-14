@@ -11,25 +11,14 @@
     </div>
     <div class="collapse navbar-collapse" id="main-site-nav">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <!-- Links (li>a) -->
+        {% assign pages = site.pages | sort: "order" %}
+        {% for my_page in pages %}
+          {% if my_page.title and my_page.order > 0 %}
+            <!-- {{ my_page.url }} -->
+            <li><a href="#{{ my_page.title }}">{{ my_page.title }}</a></li>
+          {% endif %}
+        {% endfor %}
       </ul>
     </div>
-    <!-- <div class="container">
-      <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-      <nav class="site-nav">
-        <div class="trigger">
-          {% assign pages = site.pages | sort: "order" %}
-          {% for my_page in pages %}
-            {% if my_page.title %}
-              <!-- {{ my_page.url }} --><!--
-              <a class="page-link scroll-link" href="#{{ my_page.title }}">{{ my_page.title }}</a>
-            {% endif %}
-          {% endfor %}
-        </div>
-      </nav>
-    </div>-->
   </div>
 </nav>

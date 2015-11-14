@@ -37,8 +37,14 @@ sass:
 
 exclude: [
 	"bootstrap/fonts/",
-	"boostrap/js",
-	"boostrap/less",
-	"boostrap/node_modules",
-	"boostrap/grunt"
+	"bootstrap/grunt/",
+	"bootstrap/js/",
+	"bootstrap/less/",
+	"bootstrap/node_modules/",
+	"bootstrap/CNAME",
+	"bootstrap/Gruntfile.js",
+	"bootstrap/LICENSE",
+	"bootstrap/README.md",
+	"bootstrap/package.json",
+	"fontawesome/package.json"
 ]

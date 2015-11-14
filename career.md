@@ -1,5 +1,5 @@
 ---
-layout: null
+layout: redirect
 section-type: timeline
 title: Career
 order: 30
