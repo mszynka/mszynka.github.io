@@ -7,10 +7,12 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       </button>
+      <!-- TODO: uppercase -->
       <a class="navbar-brand" href="/">{{ site.title }}</a>
     </div>
     <div class="collapse navbar-collapse" id="main-site-nav">
       <ul class="nav navbar-nav navbar-right">
+      <!-- TODO: uppercase -->
         {% assign pages = site.pages | sort: "order" %}
         {% for my_page in pages %}
           {% if my_page.title and my_page.order > 0 %}
