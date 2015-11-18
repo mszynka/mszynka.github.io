@@ -2,6 +2,7 @@
 layout: index
 section-type: section
 title: Blog
+slug: blog
 order: 40
 ---
 <ul class="post-list">

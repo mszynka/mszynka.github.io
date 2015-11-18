@@ -2,6 +2,7 @@
 layout: redirect
 section-type: timeline
 title: Career
+slug: career
 order: 30
 timeline:
   -  title: Career

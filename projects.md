@@ -2,6 +2,7 @@
 layout: redirect
 section-type: section
 title: Projects
+slug: projects
 order: 20
 ---
 

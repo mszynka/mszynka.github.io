@@ -2,6 +2,7 @@
 layout: redirect
 section-type: section
 title: About
+slug: about
 order: 10
 ---
 
