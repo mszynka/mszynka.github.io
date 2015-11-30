@@ -1,0 +1,23 @@
+.navbar:not(.top-nav-collapse) {
+  background: transparent;
+  padding-top: 1em;
+  border: 0;
+  color: white;
+}
+@include media-query(768px) {
+  .navbar #main-site-nav {
+    background: black;
+  }
+}
+.navbar.top-nav-collapse {
+  background: black;
+}
+#main-site-nav {
+  text-align: center;
+  color:white !important;
+
+  li:hover {
+    background: #888;
+    transition: background 0.2s ease-in-out 0s;
+  }
+}

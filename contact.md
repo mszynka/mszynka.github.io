@@ -2,6 +2,7 @@
 layout: redirect
 section-type: section
 title: Contact
+slug: contact
 order: 120
 ---
 <ul class="contact-list">
