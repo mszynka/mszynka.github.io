@@ -28,6 +28,13 @@ twitter_username: mszynka_
 github_username:  mszynka
 
 #################
+# Projects
+#################
+collections: 
+  projects:
+    output: true
+
+#################
 # Build settings
 #################
 markdown: kramdown

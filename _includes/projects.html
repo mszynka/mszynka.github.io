@@ -1,0 +1,17 @@
+<section id="{{ page.slug }}" class="container text-center">
+	<div class="wrapper">
+		<header class="section-header">
+			<h2>{{ page.title }}</h2>
+		</header>
+		<div class="content">
+			{{ page.content | markdownify }}
+			{% for project in site.projects %}
+				{{ project.title }} <br>
+				{{ project.date | date_to_long_string }} <br>
+				{% if projects.group %}
+					{{ projects.group }}
+				{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</section>
