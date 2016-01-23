@@ -3,7 +3,6 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
 body,
 html {
     width: 100%;
@@ -20,9 +19,7 @@ html {
 }
 
 .intro-header {
-    padding-top: 50px;
-
-    /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-top: 50px;    /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
@@ -36,9 +33,10 @@ html {
     h4,
     h5,
     h6 {
-        font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: 700;
     }
+
 }
 
 .intro-message {
@@ -55,6 +53,7 @@ html {
     & > h3 {
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     }
+
 }
 
 .intro-divider {
@@ -63,7 +62,7 @@ html {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 767px) {
+@media (max-width:767px) {
     .intro-message {
         padding-bottom: 15%;
     }
@@ -85,6 +84,7 @@ html {
     .intro-divider {
         width: 100%;
     }
+
 }
 
 .network-name {
@@ -130,6 +130,7 @@ html {
     ul {
         margin-bottom: 0;
     }
+
 }
 
 .banner-social-buttons {
@@ -137,14 +138,15 @@ html {
     margin-top: 0;
 }
 
-@media (max-width: 1199px) {
+@media (max-width:1199px) {
     ul.banner-social-buttons {
         float: left;
         margin-top: 15px;
     }
+
 }
 
-@media (max-width: 767px) {
+@media (max-width:767px) {
     .banner h2 {
         margin: 0;
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
@@ -160,4 +162,5 @@ html {
     ul.banner-social-buttons > li:last-child {
         margin-bottom: 0;
     }
+
 }
