@@ -6,6 +6,10 @@ function withjQuery($) {
 		else
 			$navbar.removeClass('top-nav-collapse');
 	});
+
+	$('#main-site-nav').find('ul li').on('click', function(){
+		$('.navbar-collapse.collapse.in').removeClass('in');
+	})
 }
 
 function pollForjQuery(time) {

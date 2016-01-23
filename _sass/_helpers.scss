@@ -21,5 +21,9 @@ p {
 }
 
 section.container {
-  padding-top: 5em;
+  padding-top: 8%;
+}
+
+section.container:last-of-type {
+  padding-bottom: 8%;
 }
