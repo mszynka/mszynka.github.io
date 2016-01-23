@@ -39,6 +39,27 @@ html {
 
 }
 
+@media(max-height: 1000px){
+    .intro-header {
+        height: 100vh;
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+    }
+    .intro-message {
+        width: 100vh;
+    }
+}
+
+@media(max-width: 750px){
+    .intro-header {
+        height: auto;
+    }
+}
+
 .intro-message {
     position: relative;
     padding-top: 20%;
