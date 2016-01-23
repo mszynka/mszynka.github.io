@@ -23,6 +23,3 @@ order: 120
 	{% if site.email %}
 	{% endif %}
 </ul>
-<div class="text-center">
-	<p>{{ site.description }}</p>
-</div>

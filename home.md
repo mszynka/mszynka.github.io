@@ -1,8 +1,8 @@
 ---
 layout: redirect
 section-type: landing-page
-title: Landing page
-subtitle: Subtitle of the page
+title: Webdev
+subtitle: Portfolio
 slug: landing-page
 order: -1
 ---
