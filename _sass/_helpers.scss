@@ -1,11 +1,30 @@
+body {
+  font-family: 'Droid Sans', sans-serif;
+  letter-spacing: 0.0625em;
+}
+
+p {
+  word-spacing: .15em;
+  line-height: 2em;
+}
+
 .text-left {
-    text-align: left;
+  text-align: left;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .text-right {
-    text-align: right;
+  text-align: right;
+}
+
+section.container {
+  padding-top: 55px;
+  margin-top: 3%;
+}
+
+section.container:last-of-type {
+  padding-bottom: 8%;
 }

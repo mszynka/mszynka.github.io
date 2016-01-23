@@ -1,23 +1,32 @@
 .navbar:not(.top-nav-collapse) {
-  background: transparent;
+  background: linear-gradient(#1c1c1c, transparent);
+  background: -webkit-gradient(linear, left top, left bottom, from(#1c1c1c), to(transparent));
+  background: -moz-linear-gradient(top, #1c1c1c, transparent);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1c1c1c1c1c1c', endColorstr='#1c1c1c1c1c1c');
   padding-top: 1em;
   border: 0;
   color: white;
+  padding-bottom: 1.5em;
+  margin-bottom: 0;
 }
+
+.navbar {
+  transition: all .3s linear;
+}
+
 @include media-query(768px) {
   .navbar #main-site-nav {
     background: black;
   }
+
 }
+
 .navbar.top-nav-collapse {
   background: black;
+  box-shadow: 0 0px 8px #333;
 }
+
 #main-site-nav {
   text-align: center;
-  color:white !important;
-
-  li:hover {
-    background: #888;
-    transition: background 0.2s ease-in-out 0s;
-  }
+  color: white !important;
 }

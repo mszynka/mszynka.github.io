@@ -1,0 +1,37 @@
+<section id="{{ page.slug }}" class="container text-center">
+	<div class="wrapper">
+		<header class="section-header">
+			<h2>{{ page.title }}</h2>
+		</header>
+		<div class="content">
+			{{ page.content | markdownify }}
+			<ul class="projects">
+				{% for project in site.projects %}
+					<li {% if project.link %}
+						onclick="window.open('{{ project.link }}')"
+						title="{{ project.link }}"
+					{% endif %}>
+					<div class="project-image">
+						{% if project.img %}
+						<img src="projects/img/{{ project.img }}" alt="{{ project.title }} logo" class="img-responsive">
+						{% endif %}
+					</div>
+					<div class="project-content">
+						<h4 class="title">{{ project.title }}</h4>
+						<div class="text-muted subtitle">
+							{{ project.date | date_to_long_string }}
+							{% if project.langs %}
+								|
+								{{ project.langs }}
+							{% endif %}
+						</div>
+						<div class="description">
+							{{ project.content | markdownify }}
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>
