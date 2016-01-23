@@ -54,6 +54,21 @@ html {
     }
 }
 
+@media(min-height: 1001px){
+    .intro-header {
+        height: 1000px;
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+    }
+    .intro-message {
+        width: 1000px;
+    }
+}
+
 @media(max-width: 750px){
     .intro-header {
         height: auto;
