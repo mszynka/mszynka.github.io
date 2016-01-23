@@ -17,12 +17,13 @@
                 <div class="timeline-panel">
 			        <div class="timeline-heading">	
                         {% assign itemTitle = item | map: "title" %}
+                        {% assign itemTimespan = item | map: "timespan" %}
 		    			{% if itemTitle[0].size %}
-	    					<h4>{{ itemTitle[0] }}</h4>
+	    					<h4>{{ itemTitle[0] }} <span class="small" style="white-space:nowrap">{{ itemTimespan[0] }}</span></h4>
     					{% endif %}
                     </div>
                     <div class="timeline-body">
-			    		{% assign itemSubtitle = item | map: "description" %}
+			    		{% assign itemSubtitle = item | map: "place" %}
 		    			{% if itemSubtitle[0].size %}
 	    					<p class="subheading">{{ itemSubtitle[0] }}</p>
     					{% endif %}

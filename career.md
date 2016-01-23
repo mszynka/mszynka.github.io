@@ -7,12 +7,14 @@ order: 30
 timeline:
   -  title: Career
      items:
-     -  title: Element 1
-        description: Sub title for element 1
-        imageSrc: /img/career1.jpg
-        imageAlt: Career 1 element
-     -  title: Element 2
-        description: Sub title for element 2
-        imageSrc: /img/career2.jpg
-        imageAlt: Career 2 element
+     -  title: Front End Developer
+        timespan: July 2015-Present
+        place: Mediporta.pl
+        imageSrc: /img/mediporta-logo.png
+        imageAlt: Mediporta.pl logo
+     -  title: Bachelor of Computer Science
+        timespan: 2013-Present
+        place: Poznan University of Technology
+        imageSrc: /projects/img/put.poznan.png
+        imageAlt: Poznan University of Technology
 ---

@@ -6,4 +6,3 @@ slug: projects
 order: 20
 ---
 
-Projects **description**

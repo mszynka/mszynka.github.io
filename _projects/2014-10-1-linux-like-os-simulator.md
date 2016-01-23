@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: redirect
 title: Linux-like OS simulator
 date: 2014-10-1
 langs: C++ BOOST
