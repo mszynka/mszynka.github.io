@@ -13,7 +13,7 @@ timeline:
         imageSrc: /img/mediporta-logo.png
         imageAlt: Mediporta.pl logo
      -  title: Front End Developer
-        timespan: July 2015 - October 2016 (1 year and 4 months)
+        timespan: July 2015 - October 2016 <br>(1 year and 4 months)
         place: Mediporta.pl
         imageSrc: /img/mediporta-logo.png
         imageAlt: Mediporta.pl logo
