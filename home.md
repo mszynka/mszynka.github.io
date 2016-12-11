@@ -1,7 +1,7 @@
 ---
 layout: redirect
 section-type: landing-page
-title: Webdev
+title: Coder
 subtitle: Portfolio
 slug: landing-page
 order: -1
