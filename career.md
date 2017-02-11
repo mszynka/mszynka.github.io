@@ -18,7 +18,7 @@ timeline:
         imageSrc: /img/mediporta-logo.png
         imageAlt: Mediporta.pl logo
      -  title: Bachelor of Computer Science
-        timespan: 2013 - Present
+        timespan: 2013 - 2017
         place: Poznan University of Technology
         imageSrc: /projects/img/put.poznan.png
         imageAlt: Poznan University of Technology
