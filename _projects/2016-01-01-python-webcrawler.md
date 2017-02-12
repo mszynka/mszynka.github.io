@@ -1,6 +1,6 @@
 ---
 layout: redirect
-title: TaskVlopper
+title: Python web crawler 
 date: 2015-11-1
 langs: Python BeautifulSoup Scrappy
 img: python-logo.png
