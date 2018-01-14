@@ -1,7 +1,7 @@
 ---
 layout: redirect
 title: Microcontroller game
-date: 2015-04-1
+date: 2015-04-01
 langs: C++ STM32
 img: stm-logo.png
 link: https://github.com/mszynka/PP___PTM_tuner
