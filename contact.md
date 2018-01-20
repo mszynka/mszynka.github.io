@@ -6,6 +6,9 @@ slug: contact
 order: 120
 ---
 <div class="form-group">
+	<div class="col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3">
+		<img src="img/face.png" alt="Face" class="img-circle img-responsive">
+	</div>
 	<div class="col-sm-6 col-xs-12">
 		<h4>{{ site.title }}</h4>
 		{% if site.email %}
