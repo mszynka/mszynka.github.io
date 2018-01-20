@@ -6,7 +6,7 @@
 		<div class="content">
 			{{ page.content | markdownify }}
 			<ul class="projects">
-				{% for project in site.projects %}
+				{% for project in site.projects reversed %}
 					<li {% if project.link %}
 						onclick="window.open('{{ project.link }}')"
 						title="{{ project.link }}"
