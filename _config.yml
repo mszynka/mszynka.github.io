@@ -30,7 +30,7 @@ linkedin_username: maszynka
 #################
 # Projects
 #################
-collections: 
+collections:
   projects:
     output: true
 
@@ -43,15 +43,5 @@ sass:
   style: compressed
 
 exclude: [
-	"bootstrap/fonts/",
-	"bootstrap/grunt/",
-	"bootstrap/js/",
-	"bootstrap/less/",
-	"bootstrap/node_modules/",
-	"bootstrap/CNAME",
-	"bootstrap/Gruntfile.js",
-	"bootstrap/LICENSE",
-	"bootstrap/README.md",
-	"bootstrap/package.json",
 	"fontawesome/package.json"
 ]
