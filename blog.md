@@ -1,9 +1,9 @@
 ---
-layout: index
+layout: blog
 section-type: section
 title: Blog
 slug: blog
-order: 40
+order: -1
 ---
 <ul class="post-list">
   {% for post in site.posts %}

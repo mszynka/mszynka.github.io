@@ -23,13 +23,13 @@ Licensed MIT
                         var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
                         ref = refs[ refs.length - 1];
                     }
-    
+
             var sheets = doc.styleSheets;
             ss.rel = "stylesheet";
             ss.href = href;
             // temporarily set media to something inapplicable to ensure it'll fetch without blocking render
             ss.media = "only x";
-    
+
             // Inject link
                 // Note: the ternary preserves the existing behavior of "before" argument, but we could choose to change the argument to "after" in a later release and standardize on ref.nextSibling for all refs
                 // Note: `insertBefore` is used instead of `appendChild`, for safety re: http://www.paulirish.com/2011/surefire-dom-element-insertion/
@@ -47,7 +47,7 @@ Licensed MIT
                                         onloadcssdefined( cb );
                                     });
                     };
-    
+
             // once loaded, set link's media back to `all` so that the stylesheet applies once it loads
             ss.onloadcssdefined = onloadcssdefined;
             onloadcssdefined(function() {
@@ -56,27 +56,27 @@ Licensed MIT
             return ss;
         };
 
-    loadCSS("bootstrap/dist/css/bootstrap.min.css");
-    loadCSS("css/main.css");
-    loadCSS("fontawesome/css/font-awesome.min.css");
+    loadCSS("/bootstrap/dist/css/bootstrap.min.css");
+    loadCSS("/css/main.css");
+    loadCSS("/fontawesome/css/font-awesome.min.css");
     loadCSS("https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic");
 </script>
 <noscript>
-    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
 </noscript>
 
-<script src="js/app.js" async defer></script>
-<script src="jquery/jquery.min.js" async defer></script>
+<script src="/jquery/jquery.min.js" async defer></script>
+<script src="/js/app.js" async defer></script>
 <script>
     function loadBootstrap(){
         if(window.jQuery)
         {
            var script = document.createElement('script');
            script.type = "text/javascript";
-           script.src = "bootstrap/dist/js/bootstrap.min.js";
+           script.src = "/bootstrap/dist/js/bootstrap.min.js";
            document.getElementsByTagName('body')[0].appendChild(script);
         }
         else {
