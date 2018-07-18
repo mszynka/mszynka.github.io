@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/mszynka/HomeSite/issues"
   },
-  "homepage": "https://github.com/mszynka/HomeSite#readme"
+  "homepage": "https://github.com/mszynka/HomeSite#readme",
+  "dependencies": {
+    "startbootstrap-resume": "^4.1.1"
+  }
 }
