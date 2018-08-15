@@ -901,3 +901,13 @@ button.navbar-toggler {
 article.post {
     margin-top: 80px;
 }
+
+.blog-article p {
+    text-align: justify;
+    text-indent: 3rem;
+}
+
+.blog-article .no-indent,
+.blog-article .footnotes p {
+    text-indent: 0;
+}

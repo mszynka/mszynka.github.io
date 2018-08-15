@@ -43,5 +43,5 @@ sass:
   style: compressed
 
 exclude: [
-	"fontawesome/package.json"
+	"fontawesome/package.json",
 ]
