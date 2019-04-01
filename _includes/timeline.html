@@ -1,36 +1,13 @@
-<section id="{{ page.slug }}" class="container text-center">
-	{% if page.timeline %}
-        {% assign inverted = 0 %}
-		<h2>{{ page.timeline | map: "title" }}</h2>
-		<ul class="timeline">
-            {% assign items = page.timeline | map: "items" | first %}
-            {% for item in items %}
-            {% assign loopindex = forloop.index | modulo: 2 %}
-            <li{% if loopindex  == 0 %} class="timeline-inverted"{% endif %}>	
-                <div class="timeline-image">
-					{% assign itemImageSrc = item | map: "imageSrc" %}
-					{% assign itemImageAlt = item | map: "imageAlt" %}
-					{% if itemImageSrc[0].size or itemImageAlt[0].size %}
-						<img src="{{ itemImageSrc }}" alt="{{ itemImageAlt }}" class="img-circle img-responsive">
-					{% endif %}
-                </div>
-                <div class="timeline-panel">
-			        <div class="timeline-heading">	
-                        {% assign itemTitle = item | map: "title" %}
-                        {% assign itemTimespan = item | map: "timespan" %}
-		    			{% if itemTitle[0].size %}
-	    					<h4>{{ itemTitle[0] }} <span class="small" style="white-space:nowrap">{{ itemTimespan[0] }}</span></h4>
-    					{% endif %}
-                    </div>
-                    <div class="timeline-body">
-			    		{% assign itemSubtitle = item | map: "place" %}
-		    			{% if itemSubtitle[0].size %}
-	    					<p class="subheading">{{ itemSubtitle[0] }}</p>
-    					{% endif %}
-                    </div>
-				</div>
-            </li>
-			{% endfor %}
-		</ul>
-	{% endif %}
-</section>
+<div class="col mt-4">
+    <div class="timeline-body">
+      {% for item in timeline %}
+        <div class="timeline-item">
+          <div class="content">
+            <h2>{{ item.title }}</h2>
+            <h6 class="date">{{ item.from }} — {{ item.to }}</h6>
+            <p>{{ item.description }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>

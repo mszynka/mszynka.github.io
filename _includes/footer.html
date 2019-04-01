@@ -1,6 +1,9 @@
-<footer class="footer text-center">
-	<hr style="margin-top: 10px; margin-bottom: 10px">
-	<div class="container">
-		<p>&copy; {{  site.author }}&nbsp;&nbsp;2014 &ndash; {{ site.time | date: '%Y' }}</p>
-	</div>
+<footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> by <strong>{{ site.author.name }}</strong>
+  </small>
+
+  {% include social.html %}
+
 </footer>

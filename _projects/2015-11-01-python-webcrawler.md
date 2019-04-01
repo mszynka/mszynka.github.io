@@ -1,10 +1,9 @@
 ---
-layout: redirect
-title: Python web crawler 
-date: 2015-11-1
-langs: Python BeautifulSoup Scrappy
-img: python-logo.png
+name: Python web crawler 
+tools: [Python, BeautifulSoup, Scrappy]
+image: /assets/img/python-logo.png
 link: https://github.com/mszynka/PythonCrawler
+description: Simple web crawler with HTML scraping
 ---
 
 Simple web crawler with HTML scraping

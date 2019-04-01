@@ -1,11 +1,12 @@
 ---
-layout: redirect
-title: Linux-like OS simulator
-date: 2014-10-01
-langs: C++ BOOST
-img: put.poznan.png
+name: Linux-like OS simulator
+tools: [C++, BOOST]
+image: /assets/img/put.poznan.png
 link: https://github.com/mszynka/Cpp___SOProject
+description: Linux Operating System Simulator written as end-of-term assignment. I was in charge of file system.
 ---
 
+# Linux-like OS simulator
+
 Linux Operating System Simulator written as end-of-term assignment. <br>
-I was in charge of filesystem.
+I was in charge of file system.
