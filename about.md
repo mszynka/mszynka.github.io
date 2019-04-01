@@ -1,6 +1,6 @@
 ---
-layout: redirect
-section-type: landing-page
+layout: page
+section-type: section
 title: About
 slug: about
 order: 10

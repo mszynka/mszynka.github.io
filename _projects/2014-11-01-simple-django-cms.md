@@ -1,5 +1,5 @@
 ---
-layout: redirect
+layout: page
 title: Simple Django CMS
 date: 2014-11-01
 langs: Python Django

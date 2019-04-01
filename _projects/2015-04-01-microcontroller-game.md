@@ -1,5 +1,5 @@
 ---
-layout: redirect
+layout: page
 title: Microcontroller game
 date: 2015-04-01
 langs: C++ STM32

@@ -1,5 +1,5 @@
 ---
-layout: redirect
+layout: page
 title: MVC optional - PizzaApp
 date: 2017-09-01
 langs: C# ASP.NET, JavaScript, CSS

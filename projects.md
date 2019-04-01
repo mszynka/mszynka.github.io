@@ -1,5 +1,5 @@
 ---
-layout: redirect
+layout: page
 section-type: projects
 title: Projects
 slug: projects

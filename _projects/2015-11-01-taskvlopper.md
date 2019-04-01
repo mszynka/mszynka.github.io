@@ -1,5 +1,5 @@
 ---
-layout: redirect
+layout: page
 title: TaskVlopper
 date: 2015-11-1
 langs: C# ASP.NET EntityFramework Angular

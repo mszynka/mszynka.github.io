@@ -1,5 +1,5 @@
 ---
-layout: redirect
+layout: page
 section-type: timeline
 title: Career
 slug: career

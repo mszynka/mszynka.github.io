@@ -1,5 +1,5 @@
 ---
-layout: redirect
+layout: page
 title: WinForms Phonebook app
 date: 2017-12-01
 langs: C# .NET, WinForms

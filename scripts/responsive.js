@@ -6,7 +6,7 @@ window.onload = function() {
     if (sidebar.className.indexOf("slideIn") != -1) {
       sidebar.className = sidebar.className.replace(" slideIn", "");
     } else {
-     sidebar.className = sidebar.className + " slideIn"; 
+     sidebar.className = sidebar.className + " slideIn";
     }
   }
 

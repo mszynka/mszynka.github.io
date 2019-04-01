@@ -1,5 +1,5 @@
 ---
-layout: redirect
+layout: page
 title: Generic REST API
 date: 2016-03-01
 langs: JavaScript, mongoDB, npm,
