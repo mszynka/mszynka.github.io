@@ -6,14 +6,12 @@ Created with [Jekyll](http://jekyllrb.com).
 Theme
 ===
 
-The theme Flex is based on the website [The Development](http://thedevelopment.co).
-
-View a demo website [here](http://the-development.github.io/flex/).
+[![portfolYOU](https://github.com/YoussefRaafatNasry/portfolYOU/blob/master/docs/header.png?raw=true)](https://youssefraafatnasry.github.io/portfolYOU/).
 
 License
 ===
 
-Flex is licensed under the MIT license:
+portfolYOU is licensed under the MIT license:
 
 The MIT License (MIT)
 

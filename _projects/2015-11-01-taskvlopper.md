@@ -1,10 +1,9 @@
 ---
-layout: page
-title: TaskVlopper
-date: 2015-11-1
-langs: C# ASP.NET EntityFramework Angular
-img: taskvlopper-logo.png
+name: TaskVlopper
+tools: [C# ASP.NET, EntityFramework, Angular]
+image: /assets/img/taskvlopper-logo.png
 link: https://github.com/bojakowsky/TaskVlopper
+description: Task and project management software
 ---
 
 Task and project management software

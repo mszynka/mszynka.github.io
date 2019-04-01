@@ -1,43 +1,56 @@
-name: Flex
-markdown: redcarpet
-highlighter: pygments
-
-#############################
-# Mateusz Szynka home theme #
-#############################
-
-#################
 # Site settings
-#################
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://mszynka.pl"
-permalink: /blog/:year/:month/:title/
-
-#################
-# HEAD
-#################
 title: Mateusz Szynka
-subtitle: web developer and programmer
-author: "Mateusz Szynka"
-lang: "en"
-favicon: "/img/favicon.ico"
-description: >
-  I'm a beginner web developer and programmer. Currently studying Computer Science at Poznan University of Technology and working as Full Stack .NET Developer at Mediporta.pl. Thousand ideas but not enough time for all of them.
+description: >- # this means to ignore newlines until "baseurl:"
+  web developer and programmer
+baseurl: ""  # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+repository: mszynka/mszynka.github.io
 
-#################
-# Contact settings
-#################
-email: devmsw12@gmail.com
-github_username:  mszynka
-linkedin_username: maszynka
+plugins:
+  - jekyll-remote-theme
 
-#################
-# Projects
-#################
+remote_theme: YoussefRaafatNasry/portfolYOU
+
+
+# Build settings
+markdown: kramdown
+# plugins:
+# - jekyll-feed
+
+
+# Author Info
+author:
+  name     : Mateusz Szynka
+  image    : img/face.png
+  email    : devmsw12@gmail.com
+  github   : mszynka
+  linkedin : maszynka
+
+
+# Collections
 collections:
   projects:
     output: true
+    permalink: /projects/:name
 
-exclude: [
-	"fontawesome/package.json",
-]
+
+# Default values for collections
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+
+
+# Posts default Permalink
+permalink: articles/:title
+
+
+# Exclude from processing.
+exclude:
+- README.md
+- CONTRIBUTING.md
+- LICENSE
+- Gemfile
+- Gemfile.lock

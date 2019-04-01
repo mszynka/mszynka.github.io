@@ -1,14 +1,5 @@
 ---
 layout: default
-title: Home
-order: -1
 ---
 
-<div class="content" id="home">
-  {% assign pages = site.pages | sort: "order" %}
-  {% for page in pages %}
-  {% if page.section-type and page.title and page.order >= 0 %}
-  {% include {{ page.section-type }}.html %}
-  {% endif %}
-  {% endfor %}
-</div>
+{% include header.html %}
