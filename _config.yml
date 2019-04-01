@@ -1,3 +1,7 @@
+name: Flex
+markdown: redcarpet
+highlighter: pygments
+
 #############################
 # Mateusz Szynka home theme #
 #############################
@@ -33,14 +37,6 @@ linkedin_username: maszynka
 collections:
   projects:
     output: true
-
-#################
-# Build settings
-#################
-markdown: kramdown
-sass:
-  sass_dir: _sass
-  style: compressed
 
 exclude: [
 	"fontawesome/package.json",
