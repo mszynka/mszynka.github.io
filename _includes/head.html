@@ -20,17 +20,40 @@
     }
   </script>
 
+  <script>
+    // to defer the loading of stylesheets
+    // just add it right before the </body> tag
+    // and before any javaScript file inclusion (for performance)
+    function loadStyleSheet(src) {
+      if (document.createStyleSheet) document.createStyleSheet(src);
+      else {
+        var stylesheet = document.createElement('link');
+        stylesheet.href = src;
+        stylesheet.rel = 'stylesheet';
+        stylesheet.type = 'text/css';
+        document.getElementsByTagName('head')[0].appendChild(stylesheet);
+      }
+    }
 
-  <!-- Font Awesome CDN -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    loadStyleSheet("https://use.fontawesome.com/releases/v5.6.3/css/all.css");
+    loadStyleSheet("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css");
+    loadStyleSheet("{{ '/assets/css/style.css' | relative_url }}");
+  </script>
+  <noscript>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+    <!-- Animate CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css"
+      type="text/css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" type="text/css">
+
+  </noscript>
 
   <!-- Bootstrap CSS CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-  <!-- Animate CSS CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" type="text/css" />
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" type="text/css">
 
 </head>
