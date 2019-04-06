@@ -21,7 +21,7 @@ markdown: kramdown
 # Author Info
 author:
   name     : Mateusz Szynka
-  image    : img/face.png
+  image    : img/face
   email    : devmsw12@gmail.com
   github   : mszynka
   linkedin : maszynka
