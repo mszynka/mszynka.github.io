@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: About
 permalink: /about/
 weight: 3
@@ -14,11 +14,6 @@ I have recently graduated as Bachelor of Computer Science at Poznan University o
 I work as Full Stack .NET Developer at Mediporta.pl.
 
 I'm looking forward to any opportunity to learn web development and software programming from experts.
-
-<!-- <div class="row">
-{% include skills.html title="Programming Skills" source=site.data.programming-skills %}
-{% include skills.html title="Other Skills" source=site.data.other-skills %}
-</div> -->
 
 ## **Career**
 
