@@ -7,13 +7,7 @@ weight: 3
 
 # **About Me**
 
-I am a web developer and programmer.
-
-I have recently graduated as Bachelor of Computer Science at Poznan University of Technology and I am finishing my Masters.
-
-I work as Full Stack .NET Developer at Mediporta.pl.
-
-I'm looking forward to any opportunity to learn web development and software programming from experts.
+Hi! I am a web developer and programmer. I have recently graduated as Master of Computer Science at Poznan University of Technology. I'm looking forward to any opportunity to learn web development and software programming from experts.
 
 ## **Career**
 
