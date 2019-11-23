@@ -43,6 +43,11 @@ defaults:
       layout: "page"
 
 
+### Pagination ###
+paginate: 6
+paginate_path: "/articles/page-:num/"
+
+
 # Posts default Permalink
 permalink: articles/:title
 

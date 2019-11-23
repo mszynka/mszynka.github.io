@@ -1,8 +1,8 @@
 ---
 title: Control your pipe(line)
 tags: [Azure DevOps, Microsoft]
-style:
-color:
+style: fill
+color: success
 description: How to manage and automatically control you deployment process using enterprise tools.
 ---
 

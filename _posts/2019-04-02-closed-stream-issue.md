@@ -1,6 +1,6 @@
 ---
 title: XmlWriter forces stream to close
-tags: [C#, .NET, XML]
+tags: [C#, .NET, XML, Microsoft]
 style: fill
 color: primary
 description: Can you handle your streams correctly? Do you know CQS? Have you considered mixing both?
