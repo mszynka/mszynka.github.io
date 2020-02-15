@@ -44,8 +44,8 @@ defaults:
 
 
 ### Pagination ###
-paginate: 6
-paginate_path: "/articles/page-:num/"
+#paginate: 0
+#paginate_path: "/articles/page-:num/"
 
 
 # Posts default Permalink

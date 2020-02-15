@@ -1,3 +1,11 @@
+---
+title: C# 8.0
+tags: [C#, .NET]
+style: border
+color: primary
+description: I've been using C# 8.0 for a month now and I have completly fell in love with new using declaration for variable scope disposable resources, asynchronous streams and switch expressions. But there is this one tiny thing that I will forever refuse to use...
+---
+
 C\# 8.0 had rolled out some time ago but as always between newest tech and production usage there is a bit of a delay. That's why I have not yet tried to summarize perks and benefits of the newest language features. It has already been done by comprehensive documentation by Microsoft finest [docs](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8). I've been using it for a month now and I have completly fell in love with new [using declaration](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8#using-declarations) for variable scope disposable resources, asynchronous streams and [switch expressions](https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8#switch-expressions). But there is this one tiny thing that I will forever refuse to use for the sake of clarity and segregation...
 
 ## C\# 8.0 interfaces
