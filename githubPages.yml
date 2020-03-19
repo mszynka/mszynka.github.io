@@ -1,0 +1,12 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Release GitHub Pages
+      uses: igolopolosov/github-action-release-github-pages@v1
