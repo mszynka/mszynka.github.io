@@ -3,7 +3,7 @@ title: Mateusz Szynka
 description: >- # this means to ignore newlines until "baseurl:"
   webdev, devops, geek and programmer
 baseurl: ""  # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://mszynka.pl" # the base hostname & protocol for your site, e.g. http://example.com
 repository: mszynka/mszynka.github.io
 
 plugins:
