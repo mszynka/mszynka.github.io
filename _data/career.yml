@@ -1,13 +1,27 @@
-- title: .NET + Angular Developer
+- title: DevOps (TeamCity, WinRM, Ansible)
+  from: May 2020
+  to: now
+  description: "@ Wolters Kluwer Polska"
+
+- title: .NET + Angular 6+ Developer
   from: Jan 2020
   to: now
   description: "@ Wolters Kluwer Polska"
 
+- title: DevOps + .NET (Azure, Docker+Kubernetes)
+  from: May 2019
+  to: Dec 2019
+  description: "@ Mediporta.pl"
+
+- title: .NET + Angular 4+ Developer
+  from: Jul 2017
+  to: Dec 2017
+  description: "@ Diabdis"
+
 - title: Full Stack .NET Developer
   from: Dec 2016
   to: Dec 2019
-  description: "@ Mediporta.pl <br>
-  At the same time from Jul 2017 do Dec same year I've developed .NET & Angular 4+ project @ Diabdis"
+  description: "@ Mediporta.pl"
 
 - title: Front End Developer
   from: May 2015
