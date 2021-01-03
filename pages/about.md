@@ -7,7 +7,10 @@ weight: 3
 
 # **About Me**
 
-Hi! I am a web developer and programmer. I have recently graduated as Master of Computer Science at Poznan University of Technology. I'm looking forward to any opportunity to learn web development and software programming from experts.
+Hi! I am a web developer and programmer. I have graduated as Master of Computer Science at Poznan University of Technology. I like solving puzzles and taking on challenging tasks. In my spare time I solve puzzles and who am I kidding? Spare time is for sleeping. 
+
+Please contact only with interesting projects and adequate salary.
+For technology references please check my projects and tags pages.
 
 ## **Career**
 
