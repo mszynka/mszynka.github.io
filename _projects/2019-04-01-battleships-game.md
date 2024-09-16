@@ -3,6 +3,7 @@ name: Battleships game
 tools: [C# .NET]
 image: https://github.com/mszynka/battleships/raw/master/screenshot.png
 description: Simple version of the game Battleships allowing a single human player to play a one-sided game of Battleships against ships placed by the computer.
+layout: page
 ---
 
 # Battleships

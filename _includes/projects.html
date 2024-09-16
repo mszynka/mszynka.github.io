@@ -1,0 +1,44 @@
+<div class="card-group mt-2">
+
+    <!-- Local Projects -->
+  {% assign display_projects = site.projects | sort: 'date' | reverse %}
+  {% for project in display_projects %}
+
+    {%- assign project_type  = "local" -%}
+    {%- assign project_id    = project.name | slugify -%}
+    {%- assign project_img   = project.image -%}
+    {%- assign project_name  = project.name -%}
+    {%- assign project_desc  = project.description -%}
+    {%- assign project_tools = project.tools -%}
+
+    {%- if project.external_url -%}
+      {%- assign project_url = project.external_url -%}
+    {%- else -%}
+      {%- assign project_url = project.url | relative_url -%}
+    {%- endif -%}
+
+    <div class="wow animated fadeIn" data-wow-delay=".15s">
+        <a href="{{ project_url }}" class="project card text-themed" {%- if external and site.open_new_tab -%} target="_blank" {%- endif -%}>
+          <div class="card-body">
+            <h5 id="{{ project_id }}-name" class="card-title">
+                {%- if project_type == "remote" -%}
+                <i class="fab fa-github" data-toggle="tooltip" data-placement="bottom" data-delay="250" title="GitHub Repository"></i> |&nbsp;
+                {%- endif -%}
+              {{ project_name }}
+            </h5>
+            {%- if project_img -%}
+             <img id="{{ project_id }}-img" class="card-img-top" src="{{ project_img }}" alt="{{ project_name }}" />
+            {%- endif -%}
+            <p id="{{ project_id }}-desc" class="card-text">{{ project_desc }}</p>
+            <p id="{{ project_id }}-tools" class="card-text">
+              {%- for tool in project_tools -%}
+              <span class="badge badge-pill text-primary border border-primary ml-1">{{ tool }}</span>
+              {%- endfor -%}
+            </p>
+          </div>
+        </a>
+        <hr>
+      </div>
+
+  {% endfor %}
+</div>

@@ -1,34 +1,56 @@
-- title: Fullstack .NET Core developer
-  from: Dec 2020
+- title: Senior Fullstack .NET
+  from: 2022
   to: now
-  description: "@ Solid Company"
+  company: "Wolftech Broadcast Solutions"
+  technologies: AWS, .NET, MSSQL, Angular, Clean , DDD, IdentityServer, microservices
+  description: >-
+    - Implemented streaming client for feed updates from X (Twitter)<br>
+    - Refactored existing product to Domain Driven Design concept<br>
+    - Updated IdentityServer to Duende<br>
+    - Added internal integrations to fully support existing product lineup<br>
+    - Dockerized and deployed on AWS all existing products
 
-- title: DevOps (TeamCity, WinRM, Ansible)
-  from: May 2020
+- title: Senior Fullstack .NET
+  from: 2020
   to: now
-  description: "@ Wolters Kluwer Polska"
+  company: "Solid Company"
+  technologies: Angular, AWS, GitLab, MySQL, MSSQL, .NET, Terraform, IdentityServer, microservices, React, Python, mongodb
+  description: >-
+    - Implemented additional components to solid.jobs application for better ATS experience (.NET, Angular)<br>
+    - Redesigned frontend application for same-day delivery application (project Deliver in person [AU])<br>
+    - Implemented better state management for parcel operations for same-day dalivery (NodeJS, firebase)<br>
+    - Upgraded both IdentityServer and it’s custom admin application to v6 (project CloudCall, AWS, terraform)<br>
+    - Implemented entire system for handling gate access management on site (React, Python, mongodb)<br>
+    - Designed modern solutions for better book management for schools in AU (React)
 
-- title: .NET + Angular 6+ Developer
-  from: Jan 2020
-  to: now
-  description: "@ Wolters Kluwer Polska"
+- title: Full Stack .NET DevOps
+  from: 2019
+  to: 2021
+  company: "Wolters Kluwer Polska"
+  technologies: .NET, Angular, Rabbitmq, ansible, microservices, WinRM, TeamCity management
+  description: >-
+    - Migrated existing Windows applications into docker on Linux.<br>
+    - Automated installation of new TeamCity agents by implementing Ansible script for WinRM.<br>
+    - Automated docker deployment for custom environment.<br>
+    - Utilized RabbitMQ to offload main processing threads to microservices
 
-- title: DevOps + .NET (Azure, Docker+Kubernetes)
-  from: May 2019
-  to: Dec 2019
-  description: "@ Mediporta.pl"
-
-- title: .NET + Angular 4+ Developer
-  from: Jul 2017
-  to: Dec 2017
-  description: "@ Diabdis"
-
-- title: Full Stack .NET Developer
-  from: Dec 2016
-  to: Dec 2019
-  description: "@ Mediporta.pl"
+- title: Full Stack .NET DevOps
+  from: 2016
+  to: 2019
+  company: "Mediporta.pl"
+  technologies: ASP.NET, jQuery, Typescript, MSSQL, Azure, Docker, Kubernetes
+  description: >-
+    - Rewritten prescription module and implemented integration with CSIOZ's e-Recepta (HL7 standard). <br>
+    - Successfully deployed integration allowing digitally signing ZUS-PUE documents.<br>
+    - Maintained custom documentation transformation tools. Refactored existing dynamic forms into SPA.<br>
+    - Created SPA+REST app for online product orders.<br>
+    - Automated tenant management by implementing and integrating Kubernetes on Azure.
 
 - title: Front End Developer
-  from: May 2015
-  to: Dec 2016
-  description: "@ Mediporta.pl"
+  from: 2015
+  to: 2016
+  company: "Mediporta.pl"
+  technologies: ASP.NET, jQuery, Typescript, MSSQL
+  description: >-
+    - Implemented new forms and form controls for wide-area health system<br>
+    - Redesigned entire system layout to a modern equivalent

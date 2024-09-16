@@ -3,6 +3,7 @@ name: TaskVlopper
 tools: [C# ASP.NET, EntityFramework, Angular]
 image: /assets/img/taskvlopper-logo-full.png
 description: Task and project management software
+layout: page
 ---
 
 ![TaskVlopper](/assets/img/taskvlopper-logo-full.png)

@@ -6,16 +6,16 @@ Created with [Jekyll](http://jekyllrb.com).
 Theme
 ===
 
-[![portfolYOU](https://github.com/YoussefRaafatNasry/portfolYOU/blob/master/docs/header.png?raw=true)](https://youssefraafatnasry.github.io/portfolYOU/).
+[![GuangLun](https://github.com/GuangLun2000/GuangLun2000.github.io)](https://github.com/GuangLun2000/GuangLun2000.github.io).
 
 License
 ===
 
-portfolYOU is licensed under the MIT license:
+GuangLun is licensed under the MIT license:
 
 The MIT License (MIT)
 
-Copyright (c) 2013-2014 Jeff Martin
+Copyright (c) 2023 Hanlin Cai
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

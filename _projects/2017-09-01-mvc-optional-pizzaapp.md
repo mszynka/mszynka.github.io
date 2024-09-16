@@ -4,6 +4,7 @@ tools: [C# ASP.NET, JavaScript, CSS]
 #image: /assets/img/put.poznan.png
 link: https://github.com/mszynka/mvc-optional-pizzaapp
 description: Simple PizzaApp written as end-of-term assignment.
+layout: page
 ---
 
 # PizzaApp

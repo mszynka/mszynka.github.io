@@ -1,61 +1,70 @@
 # Site settings
 title: Mateusz Szynka
 description: >- # this means to ignore newlines until "baseurl:"
-  webdev, devops, geek and programmer
+  Senior fullstack .NET developer | Enabled by cloud solutions
 baseurl: ""  # the subpath of your site, e.g. /blog
 url: "https://mszynka.pl" # the base hostname & protocol for your site, e.g. http://example.com
 repository: mszynka/mszynka.github.io
 
-plugins:
-  - jekyll-remote-theme
+owner:
+  name: Mateusz Szynka
+  avatar: face.webp
+  bio: Senior fullstack .NET developer | Enabled by cloud solutions
+  email: mateusz.szynka+dev@gmail.com
+  #cv: https://caihanlin.com/file/CV-HanlinCAI.pdf
+  # Social networking links are used in author-bio sidebar. Update and remove as you like.
+  github: mszynka
+  linkedin: maszynka
 
-remote_theme: YoussefRaafatNasry/portfolYOU
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: About Me
+    url: /
+  - title: Articles
+    url: /articles/
+  - title: Career
+    url: /career/
+  - title: Projects
+    url: /projects/
 
-
-# Build settings
-markdown: kramdown
-# plugins:
-# - jekyll-feed
-
-
-# Author Info
-author:
-  name     : Mateusz Szynka
-  image    : img/face
-  email    : devmsw12@gmail.com
-  github   : mszynka
-  linkedin : maszynka
-
-
-# Collections
 collections:
   projects:
     output: true
     permalink: /projects/:name
 
-
-# Default values for collections
-defaults:
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "page"
-
-
-### Pagination ###
-#paginate: 0
-#paginate_path: "/articles/page-:num/"
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Warsaw
+future: true
+highlighter: rouge
+markdown: kramdown
+# markdown: redcarpet
+# pygments: true
 
 
-# Posts default Permalink
+# https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: articles/:title
+permalink: projects/:title
 
 
-# Exclude from processing.
-exclude:
-- README.md
-- CONTRIBUTING.md
-- LICENSE
-- Gemfile
-- Gemfile.lock
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+  # coderay:
+  #   coderay_line_numbers:
+  #   coderay_line_numbers_start: 1
+  #   coderay_tab_width: 4
+  #   coderay_bold_every: 10
+  #   coderay_css: class
+
+
+# disqus settings:
+disqus:
+  shortname: lancecai
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "minimal-mistakes.sublime-project", "minimal-mistakes.sublime-workspace"]

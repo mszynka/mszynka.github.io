@@ -1,13 +1,9 @@
 <div class="col mt-4">
-    <div class="timeline-body">
+    <ul>
       {% for item in timeline %}
-        <div class="timeline-item">
-          <div class="content">
-            <h2>{{ item.title }}</h2>
-            <h6 class="date">{{ item.from }} — {{ item.to }}</h6>
-            <p>{{ item.description }}</p>
-          </div>
-        </div>
+      <li>
+        {{ item.from }}-{{ item.to }}:  <strong>{{ item.title }}</strong> @ {{ item.description }}
+      </li>
       {% endfor %}
-    </div>
+    </ul>
   </div>

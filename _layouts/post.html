@@ -1,46 +1,56 @@
----
-layout: page
----
+<!-- Lastly modified by Hanlin CAI in 2023/04/26 -->
+<!-- It is not recommended to modify this code, unless you are a Pro-->
 
-<h1><b>{{ page.title }}</b></h1>
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 
-<p class="article-metadata text-muted">
-  {{ page.date | date_to_long_string }} -
-  <b>
-    {% assign words = content | number_of_words %}
-    {% if words < 360 %}
-    less than 1 min read time
-    {% else %}
-    {{ words | divided_by:180 }} mins read time
-    {% endif %}
-  </b>
+<head>
+{% include head.html %}
+</head>
 
-  <br>
+<body class="article" itemscope itemtype="http://schema.org/WebPage">
 
-  {% if page.tags != empty %}
-  Tags:
-  {% for tag in page.tags %}
-  <span class="badge badge-pill text-primary border border-primary">{{ tag }}</span>
-  {% endfor %}
-  {% endif %}
+{% include chrome-frame.html %}
 
-</p>
+{% include navigation.html %}
 
-{{ content }}
+{% if page.image.feature %}<div class="image-wrap">
+  <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image" itemprop="primaryImageOfPage">
+</div><!-- /.image-wrap -->{% endif %}
 
-<div id="disqus_thread"></div>
-<script>
-  var disqus_config = function () {
-    this.page.url = "https://mszynka.pl{{ page.url }}";
-    this.page.identifier = "{{ page.id }}";
-  };
+<div id="main" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
+  <div class="article-author-top">
+    {% include author-bio.html %}
+  </div>
+  <article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+    <div class="headline-wrap">
+      <h1 itemprop="headline">{{ page.title }}</h1>
+      <h2>{{ page.tagline }}</h2>
+    </div><!--/ .headline-wrap -->
+    <div class="article-wrap" itemprop="text">
+      {{ content }}
+      <hr />
+      <footer role="contentinfo">
+        <div class="article-author-bottom">
+          {% include author-bio.html %}
+        </div>
+        <p class="byline"><strong>{{ page.title }}</strong> was published on <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %d, %Y" }}</time>{% if page.modified %} and last modified on <time datetime="{{ page.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ page.modified | date: "%B %d, %Y" }}</time>{% endif %} by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name"><a href="{{ site.url }}" title="About {{ site.owner.name }}" itemprop="url">{{ site.owner.name }}</a></span></span>.</p>
+      </footer>
+    </div><!-- /.article-wrap -->
+  </article>
+</div><!-- /#main -->
 
-  (function () { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://mszynka.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-  })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
-    Disqus.</a></noscript>
+
+<div class="footer-wrap">
+  <footer>
+    {% include footer.html %}
+  </footer>
+</div><!-- /.footer-wrap -->
+
+{% include scripts.html %}	        
+
+</body>
+</html>

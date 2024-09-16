@@ -3,6 +3,7 @@ name: Python web crawler
 tools: [Python, BeautifulSoup, Scrappy]
 image: /assets/img/python-crawler.png
 description: Simple web crawler with HTML scraping
+layout: page
 ---
 
 # Python web crawler

@@ -1,0 +1,12 @@
+<div class="col mt-4">
+  <ul>
+    {% for item in site.data.career %}
+    <li>
+      <strong>{{ item.title }}</strong> @ {{ item.company }}<br>
+      {{ item.from }}-{{ item.to }}<br>
+      {{ item.description }}<br>
+      <p>Used technologies: <i>{{ item.technologies }}</i></p>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
