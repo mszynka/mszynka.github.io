@@ -6,7 +6,7 @@ Created with [Jekyll](http://jekyllrb.com).
 Theme
 ===
 
-[![GuangLun](https://github.com/GuangLun2000/GuangLun2000.github.io)](https://github.com/GuangLun2000/GuangLun2000.github.io).
+[GuangLun](https://github.com/GuangLun2000/GuangLun2000.github.io).
 
 License
 ===
