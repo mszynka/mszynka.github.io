@@ -44,7 +44,6 @@ markdown: kramdown
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: articles/:title
-permalink: projects/:title
 
 
 kramdown:
