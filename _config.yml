@@ -27,6 +27,8 @@ links:
     url: /career/
   - title: Projects
     url: /projects/
+  - title: Recruitment
+    url: /recruitment/
 
 collections:
   projects:
